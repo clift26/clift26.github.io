@@ -1,0 +1,33 @@
+body{font-family:'Open Sans',sans-serif;margin:0 auto}
+header{background:url(../images/header_bg.png) center no-repeat;background-size:cover}
+.clearfix{clear:both}
+nav ul li{display:inline-block}
+nav ul li a{font-weight:300;color:#fff;text-transform:uppercase;text-decoration:none;position:relative}
+nav ul li a::after{display:block;content:"";height:3px;width:0;background:#fff;position:absolute;bottom:-5px;left:0;transition-duration:.5s}
+nav ul li a:hover::after{width:100%}
+.join h1{color:#fff;font-weight:300}
+.join h2{color:#fff;font-weight:300}
+.join a{display:inline-block;color:#fff;text-decoration:none;border:2px solid #fff;border-radius:5px}
+.join a:hover{background:#fff;color:#f74c55;transition-duration:.8s}
+.text .wrapper h2{font-weight:300;color:#000}
+.text p{color:#404040;font-weight:300}
+.boxes{text-align:center;background:linear-gradient(to right,#404040,#404040,#404040,#2d5f3b,#2d5f3b,#2d5f3b)}
+.box{display:inline-block;vertical-align:top}
+.boxes .wrapper div:first-child{background:#404040}
+.boxes .wrapper div:nth-child(2){background:#f74c55}
+.boxes .wrapper div:last-child{background:#2d5f3b}
+.box img{float:left}
+.box h3{color:#fff;font-weight:400}
+.box p{color:#fff;font-weight:300}
+.box a{display:block;float:right;text-align:center;font-weight:700;text-decoration:none;color:#fff;background:rgba(0,0,0,.5)}
+.box a:hover{background:#fff;color:#000;transition-duration:.8s}
+.overlay{background:url(../images/overlay_bg.jpg) center no-repeat;background-size:cover;text-align:center}
+.overlay h3{color:#fff;font-weight:300}
+.overlay h3 b{font-weight:700}
+.overlay a{display:inline-block;color:#fff;text-decoration:none;border:2px solid #fff;border-radius:5px;transition-duration:1s}
+.overlay a:hover{background:#fff;color:#000}
+footer{text-align:center;border-top:9px solid #40c4c8;border-bottom:0;border-image:url(../images/footer_border.png) 10 repeat}
+.social a{display:inline-block;background:#aaa;color:#fff;border-radius:50%;position:relative}
+.social a i{position:relative;z-index:1}
+.social a::before{background:#f74c54;display:block;content:"";position:absolute;border-radius:50%;transform:scale(0);transition-duration:.8s}
+.social a:hover::before{transform:scale(1)}
