@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="style.min.css">
     <link rel="stylesheet" href="css/remodal.css">
     <link rel="stylesheet" href="css/remodal-default-theme.css">
-    <!-- Add jQuery library -->
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<!-- Add jQuery library -->
+    <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 <!-- Add fancyBox -->
-<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js?v=2.1.5"></script>
 <!--Вызов (инициализация) плагина-->
-<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
-</script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
+    </script>
 </head>
 <body>
 
@@ -146,5 +146,29 @@
         </div>
     </div>
 </footer>
+<div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                   <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                      <form class="contact_form" action="contact-form.php" method="post">
+                            <ul>
+                                <li><p>заказать звонок</p></li>
+                                <li><p>
+                                        <input type="text"  name="name" placeholder="Имя" required />
+                                    </p></li>
+                                    <li><p>
+                                        <input type="tel" name="tel"  placeholder="Номер телефона" required />
+                                        </p></li>
+                                    <li>
+                                        <select>
+                                          <option><p>Торговое помещение</p></option>
+                                          <option><p>Офисное помещение</p></option>
+                                        </select>
+                                    </li>
+                                    <input name="bezspama" type="text" style="display:none" value="" />
+                                    <li><p>
+                                        <button class="submit" type="submit">Отправить</button>
+                                    </p></li>
+                            </ul>
+                    </form>
+                </div>
 </body>
 </html>
