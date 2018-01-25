@@ -310,6 +310,9 @@
 
     }
     @media (max-width: 570px) {
+        body {
+            background: #ffffff;
+        }
         .head-menu {
             margin: 50px auto 0 auto;
         }
@@ -374,7 +377,8 @@
                 text-align: center;
             }
              .benefits {
-            margin: 0 auto 30px;
+            margin: 0 auto;
+            padding: 0 0 20px;
         }
             .benefits > div > div {
                 display: table-cell;

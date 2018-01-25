@@ -93,6 +93,7 @@ footer a{margin-top:10px}
 footer .contacts{margin-bottom:10px}
 }
 @media (max-width:570px){
+body{background:#fff}
 .head-menu{margin:50px auto 0 auto}
 .head-menu .button{font-size:17px}
 .mail a{padding:30px 0}
@@ -111,7 +112,7 @@ header .wrapper{padding-top:17px;height:235px}
 .benefits>div>div{padding-left:60px}
 .benefits>div>div:first-child{padding-left:0}
 .benefits>div{display:table;text-align:center}
-.benefits{margin:0 auto 30px}
+.benefits{margin:0 auto;padding:0 0 20px}
 .benefits>div>div{display:table-cell}
 .benefits span{font-weight:700;text-transform:uppercase}
 }
