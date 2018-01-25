@@ -79,7 +79,7 @@ select{color:#797979}
 button{background:#84293a;color:#fff;text-transform:uppercase;font-weight:700;font-size:18px;padding:15px 0 15px 0;width:320px;border:2px solid #84293a;margin:35px 0 35px 0}
 button:hover{background:0 0;color:#84293a}
 input,textarea{width:320px;padding:15px 0 15px 15px;color:#797979}
-textarea{height:110px}
+textarea{height:110px;resize:none}
 .images ul{float:left;list-style:none;padding:22px 24px 20px 66px;border-left:2px solid #fff}
 .task{height:340px}
 .images{padding-top:40px}
