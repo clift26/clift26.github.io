@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="style.min.css"/>
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    </script>
+    <script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Как только будет загружен API и готов DOM, выполняем инициализацию
+        ymaps.ready(init);
+
+        function init () {
+            // Создание экземпляра карты и его привязка к контейнеру с
+            // заданным id ("map")
+            var myMap = new ymaps.Map('map', {
+                    // При инициализации карты, обязательно нужно указать
+                    // ее центр и коэффициент масштабирования
+                    center: [60.003992, 30.262482], // Нижний Новгород
+                    zoom: 15
+                });
+
+        // Создаем метку с изображением коалы
+                myPlacemark = new ymaps.Placemark([60.002456, 30.264821], {
+                    // Контент балуна
+                    balloonContent: '<div style = "margin-top: 30px; margin-left: 20px;" ><b>Коммендантский</b><br/>проспект, 4А</div>'
+                }, {
+                     // Изображение иконки метки
+                    iconImageHref: 'images/baloon.png',
+                    // Размеры изображения иконки
+                    iconImageSize: [109, 24],
+                    // смещение картинки
+                    iconImageOffset: [-54, -24],
+                    // Размеры содержимого балуна
+                    balloonContentSize: [130, 130],
+                    // Задаем макет балуна - пользовательская картинка с контентом
+                    balloonLayout: "default#imageWithContent",
+                    // Картинка балуна
+                    balloonImageHref: 'newbaloon.png',
+                    // Смещение картинки балуна
+                    balloonImageOffset: [-5, -60],
+                    // Размеры картинки балуна
+                    balloonImageSize: [150, 150],
+                    // Балун не имеет тени
+                    balloonShadow: false
+                });
+
+            // Добавляем метку на карту
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="wrapper">
+       <div class="main">
+            <div class="high"><a href="index.html"><img id="logo" src="images/logo.png"/></a><p>БИЗНЕС ЦЕНТР</p></div>
+            <div class="high"><img href="icon" src="images/pin_h.png" alt=""/><p class="imain">Комендантский пр-т, 4</p></div>
+            <div class="high"><img href="icon" src="images/phone_h.png" alt=""/><p class="smain">8 (812) 123-45-67</p></div>
+            <div class="high"><div  id="button"><a  href="#modal">заказать звонок</a></div></div>
+                <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                   <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                      <form class="contact_form" action="contact-form.php" method="post">
+                            <ul>
+                                <li><p>заказать звонок</p></li>
+                                <li><p>
+                                        <input type="text"  name="name" placeholder="Имя" required />
+                                    </p></li>
+                                    <li><p>
+                                        <input type="tel" name="tel"  placeholder="Номер телефона" required />
+                                        </p></li>
+                                    <li>
+                                        <select>
+                                          <option><p>Торговое помещение</p></option>
+                                          <option><p>Офисное помещение</p></option>
+                                        </select>
+                                    </li>
+                                    <input name="bezspama" type="text" style="display:none" value="" />
+                                    <li><p>
+                                        <button class="submit" type="submit">Отправить</button>
+                                    </p></li>
+                            </ul>
+                    </form>
+                </div>
+                </div>
+
+        </div>
+    </div>
+</header>
+<nav class="nav">
+    <ul>
+        <li><a href="index.html">главная</a></li>
+        <li><a href="rent.html">офисные помещения</a></li>
+        <li><a href="rent2.html">торговые помещения</a></li>
+        <li><a href="contacts.html">контакты</a></li>
+    </ul>
+</nav>
+
+<div class="backg">
+    <div class="wrapper">
+        <div class="navbar">
+            <div><a href="index.html">Главная</a></div>
+            <div><a href="contacts.html">> Контакты</a></div>
+        </div>
+    </div>
+</div>
+  <div id="map"></div>
+<div class="info-form">
+    <div class="wrapper">
+<form class="contact_form" action="contact-form.php" method="post">
+    <ul>
+        <li><p>связаться с нами</p></li>
+        <li><p>
+                <input type="text"  name="name" placeholder="Имя" required />
+            </p></li>
+            <li><p>
+                <input type="email" name="email" placeholder="Электронная почта" required />
+            </p></li>
+           <li><p>
+                <input type="tel" name="tel"  placeholder="Номер телефона" required />
+                </p></li>
+            <li><p>
+                <textarea name="message" cols="43" rows="4" placeholder="Ваше сообщение" required ></textarea>
+            </p></li>
+            <input name="bezspama" type="text" style="display:none" value="" />
+            <li><p>
+                <button class="submit" type="submit">Отправить</button>
+            </p></li>
+    </ul>
+</form>
+        <div class="ifo">
+            <div class="images">
+                <ul>
+                    <li><img src="images/pin_h.png" alt=""></li>
+                    <li><img src="images/phone_h.png" alt=""></li>
+                    <li><img src="images/clock_ai.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="wrapp-info2">
+                <p>г. Санкт-Петербург</p>
+                <p><img src="images/sub_i.png" alt="">Комендантский пр-т, Пионерская</p>
+                <p>Комендантский пр-т, д. 4, лит. А</p>
+            </div>
+            <div class="wrapp-info2">
+                <p>8 (812) 234 45 56</p>
+                <p>E-mail: contact@stroydom.ru</p>
+            </div>
+            <div class="wrapp-info2">
+                <p>пн-пт: 10:00 - 17:00</p>
+                <p>сб-вс: 10:00 - 16:00</p>
+            </div>
+        </div>
+        <ul class="mes">
+            <li><img src="images/phone_a.png"/></li>
+            <li><a href="#modal">заказать звонок</a></li>
+            <li><img src="images/mail_a.png"/></li>
+            <li><a href="#">связаться с нами</a></li>
+        </ul>
+     </div><!--end wrapper-->
+</div>
+<div class="clearfix"></div>
+
+
+<footer>
+
+  <div class="back">
+    <div class="wrapper">
+        <div class="contacts2">
+            <div class="wrapp-info">
+                <div class="wrapp-info"><img src="images/pin_f.png" alt=""/></div>
+                <div class="wrapp-info">
+                    <div class="wrapp-info"><p>г. Санкт-Петербург</p></div>
+                    <div class="clearfix"></div>
+                    <div class="wrapp-info"><img src="images/sub_f.png" alt=""></div>
+                    <div id="inf"><p>Комендантский пр-т, Пионерская</p></div>
+                    <div class="clearfix"></div>
+                    <div class="wrapp-info"><p>Комендантский пр-т, д. 4, лит. А</p></div>
+                </div>
+            </div>
+            <div class="wrapp-info" id="solid2">
+                <div class="wrapp-info"><img src="images/phone_f.png" alt=""></div>
+                <div class="wrapp-info">
+                    <p>8 (812) 234 45 56</p>
+                    <p>E-mail: contact@stroydom.ru</p>
+                </div>
+            </div>
+            <div class="wrapp-info">
+                <div class="wrapp-info"><img src="images/clock_f.png" alt=""></div>
+                <div class="wrapp-info">
+                    <p>пн-пт: 10:00 - 17:00</p>
+                    <p>сб-вс: 10:00 - 16:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/remodal.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

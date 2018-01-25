@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="css/remodal.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+    <script src="js/slider/jquery.bxslider.min.js"></script>
+    <link href="js/slider/jquery.bxslider.css" rel="stylesheet"/>
+    <script>$(document).ready(function(){
+  $('.slider1').bxSlider({
+    slideWidth: 300,
+    minSlides: 2,
+    maxSlides: 4,
+    moveSlides: 1,
+    slideMargin:0
+  });
+});
+</script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript">
+
+        ymaps.ready(init);
+
+        function init () {
+
+            var myMap = new ymaps.Map('map', {
+
+                    center: [60.003992, 30.262482],
+                    zoom: 15
+                });
+
+
+                myPlacemark = new ymaps.Placemark([60.002456, 30.264821], {
+
+                    balloonContent: '<div style = "margin-top: 30px; margin-left: 20px;" ><b>Коммендантский</b><br/>проспект, 4А</div>'
+                }, {
+
+                    iconImageHref: 'images/baloon.png',
+
+                    iconImageSize: [109, 24],
+                    // смещение картинки
+                    iconImageOffset: [-54, -24],
+                    // Размеры содержимого балуна
+                    balloonContentSize: [130, 130],
+                    // Задаем макет балуна - пользовательская картинка с контентом
+                    balloonLayout: "default#imageWithContent",
+                    // Картинка балуна
+                    balloonImageHref: 'newbaloon.png',
+                    // Смещение картинки балуна
+                    balloonImageOffset: [-5, -60],
+                    // Размеры картинки балуна
+                    balloonImageSize: [150, 150],
+                    // Балун не имеет тени
+                    balloonShadow: false
+                });
+
+            // Добавляем метку на карту
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="wrapper">
+       <div class="main">
+            <div class="high"><a href="index.html"><img id="logo" src="images/logo.png" alt="stroydom logo"/></a><p>БИЗНЕС ЦЕНТР</p></div>
+            <div class="high"><img href="icon" src="images/pin_h.png" alt=""/><p class="imain">Комендантский пр-т, 4</p></div>
+            <div class="high"><img href="icon" src="images/phone_h.png" alt=""/><p class="smain">8 (812) 123-45-67</p></div>
+            <div class="high"><div id="button"><a  href="#modal">заказать звонок</a></div></div>
+            <div class="remodal" data-remodal-id="modal" role="dialog" aria-labelledby="modal1Title" aria-describedby="modal1Desc">
+                   <button data-remodal-action="close" class="remodal-close" aria-label="Close"></button>
+                      <form class="contact_form" action="contact-form.php" method="post">
+                            <ul>
+                                <li><p>заказать звонок</p></li>
+                                <li><p>
+                                        <input type="text"  name="name" placeholder="Имя" required />
+                                    </p></li>
+                                    <li><p>
+                                        <input type="tel" name="tel"  placeholder="Номер телефона" required />
+                                        </p></li>
+                                    <li>
+                                        <select>
+                                          <option><p>Торговое помещение</p></option>
+                                          <option><p>Офисное помещение</p></option>
+                                        </select>
+                                    </li>
+                                    <input name="bezspama" type="text" style="display:none" value="" />
+                                    <li><p>
+                                        <button class="submit" type="submit">Отправить</button>
+                                    </p></li>
+                            </ul>
+                    </form>
+                </div>
+                </div>
+
+        </div>
+    </div>
+</header>
+
+<div class="banner">
+
+    <div class="wrapper">
+
+        <nav>
+            <ul>
+                <li><a href="index.html">главная</a></li>
+                <li><a href="rent.html">офисные помещения</a></li>
+                <li><a href="rent2.html">торговые помещения</a></li>
+                <li><a href="contacts.html">контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="inforent">
+        	<h2>помещения в аренду</h2>
+        	<h1>аренда от 3 500 руб/мес</h1>
+        	<a href="rent.html"><p>смотреть планировки</p></div></a>
+        <div class="inforent">
+        	<h2>торговые помещения</h2>
+        	<h1>более 50 торговых точек</h1>
+        	<a href="rent2.html"><p>смотреть планировки</p></div></a>
+
+    </div>
+</div>
+
+<div class="wrapper">
+
+    <div class="about">
+        О нас
+    </div>
+
+</div>
+
+<div id="gray-block">
+    <div class="wrapper">
+        <div class="about-info">
+            Равным образом постоянный количественный рост и сфера нашей<br/>
+             активности играет важную роль в формировании системы обучения<br/>
+              кадров, соответствует насущным потребностям. Не следует, однако<br/>
+               забывать, что сложившаяся структура организации обеспечивает<br/>
+                широкому кругу (специалистов) участие в формировании новых<br/>
+                 предложений. Таким образом дальнейшее развитие различных форм<br/>
+                 деятельности играет важную роль в формировании модели развития.<br/>
+                  Не следует, однако забывать, что постоянный количественный рост и<br/>
+                  сфера нашей активности требуют определения и уточнения форм
+        </div>
+        <div class="about-info">
+            <div class="gps"><p class="iq">Адрес:</p><p class="iq">Телефон:</p><p class="iq">Площадь:</p></div>
+            <div class="gps"><p class="ia">Комендантский пр-т, д. 4</p><p class="ia">8 (812) 123-34-56</p><p class="ia">4 568, 5 м2</p></div>
+            <div class="clearfix"></div>
+             <div class="ic">
+            <div><a href="#modal"><img src="images/phone_a.png" alt=""/><p>заказать звонок</p></a></div>
+            <div class="h"><a href="#"><img src="images/mail_a.png" alt=""/><p>связаться с нами</p></a></div>
+        </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="about-images">
+        <img src="images/photo.png" />
+        <img src="images/photo.png" />
+        <img src="images/photo.png" />
+    </div>
+</div>
+<div class="wrapper">
+    <div class="about">
+        Новости
+    </div>
+</div>
+    <div id="news">
+        <div class="wrapper">
+            <div class="info-block">
+                <h2>20/06/2016</h2>
+                <h1>Заголовок новости</h1><br/>
+                <p>Равным образом постоянный<br/> количественный рост и сфера нашей<br/> активности играет важную роль в<br/> формировании системы обучения кадров,<br/> соответствует насущным потребностям. Не<br/> следует, однако забывать, что сложившаяся<br/> структура организации обеспечивает </p>
+            </div>
+            <div class="info-block">
+                <h2>20/06/2016</h2>
+                <h1>Заголовок новости</h1><br/>
+                <p>Равным образом постоянный<br/> количественный рост и сфера нашей<br/> активности играет важную роль в<br/> формировании системы обучения кадров,<br/> соответствует насущным потребностям. Не<br/> следует, однако забывать, что сложившаяся<br/> структура организации обеспечивает </p>
+            </div>
+            <div class="info-block">
+                <h2>20/06/2016</h2>
+                <h1>Заголовок новости</h1><br/>
+                <p>Равным образом постоянный<br/> количественный рост и сфера нашей<br/> активности играет важную роль в<br/> формировании системы обучения кадров,<br/> соответствует насущным потребностям. Не<br/> следует, однако забывать, что сложившаяся<br/> структура организации обеспечивает </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="wrapper">
+    <div class="news2"><a href="#"><p>все новости</p></a></div>
+</div>
+<div class="wrapper">
+<div class="about" id="cor2">
+        Арендаторы и партнеры
+    </div>
+</div>
+    <ul class="slider1">
+          <li><a href="#"><img class="ask" src="images/askona.png" alt=""></a></li>
+          <li><a href="#"><img class="company" src="images/kerama.png" alt=""></a></li>
+          <li><a href="#"><img src="images/askona_s.png" alt=""></a></li>
+          <li><a href="#"><img class="company" src="images/tristone.png" alt=""></a></li>
+      </ul>
+
+<div class="wrapper">
+    <div class="news2"><a href="#"><p>все арендаторы</p></a></div>
+
+<div class="about" id="cor3">
+        наши контакты
+    </div>
+</div>
+<div class="contacts">
+    <div class="wrapper">
+        <div class="contacts2">
+            <div class="wrapp-info">
+                <div class="wrapp-info"><img src="images/pin_h.png" alt=""/></div>
+                <div class="wrapp-info">
+                    <div class="wrapp-info"><p>г. Санкт-Петербург</p></div>
+                    <div class="clearfix"></div>
+                    <div class="wrapp-info"><img src="images/sub_i.png" alt=""></div>
+                    <div id="inf"><p>Комендантский пр-т, Пионерская</p></div>
+                    <div class="clearfix"></div>
+                    <div class="wrapp-info"><p>Комендантский пр-т, д. 4, лит. А</p></div>
+                </div>
+            </div>
+            <div class="wrapp-info" id="solid">
+                <div class="wrapp-info"><img src="images/phone_h.png" alt=""></div>
+                <div class="wrapp-info">
+                    <p>8 (812) 234 45 56</p>
+                    <p>E-mail: contact@stroydom.ru</p>
+                </div>
+            </div>
+            <div class="wrapp-info">
+                <div class="wrapp-info"><img src="images/clock_ai.png" alt=""></div>
+                <div class="wrapp-info">
+                    <p>пн-пт: 10:00 - 17:00</p>
+                    <p>сб-вс: 10:00 - 16:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="clearfix"></div>
+
+ <div id="map"></div>
+
+<footer>
+
+  <div class="back">
+    <div class="wrapper">
+        <div class="contacts2">
+            <div class="wrapp-info">
+                <div class="wrapp-info"><img src="images/pin_f.png" alt=""/></div>
+                <div class="wrapp-info">
+                    <div class="wrapp-info"><p>г. Санкт-Петербург</p></div>
+                    <div class="clearfix"></div>
+                    <div class="wrapp-info"><img src="images/sub_f.png" alt=""></div>
+                    <div id="inf"><p>Комендантский пр-т, Пионерская</p></div>
+                    <div class="clearfix"></div>
+                    <div class="wrapp-info"><p>Комендантский пр-т, д. 4, лит. А</p></div>
+                </div>
+            </div>
+            <div class="wrapp-info" id="solid2">
+                <div class="wrapp-info"><img src="images/phone_f.png" alt=""></div>
+                <div class="wrapp-info">
+                    <p>8 (812) 234 45 56</p>
+                    <p>E-mail: contact@stroydom.ru</p>
+                </div>
+            </div>
+            <div class="wrapp-info">
+                <div class="wrapp-info"><img src="images/clock_f.png" alt=""></div>
+                <div class="wrapp-info">
+                    <p>пн-пт: 10:00 - 17:00</p>
+                    <p>сб-вс: 10:00 - 16:00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/remodal.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
