@@ -92,7 +92,7 @@ footer{text-align:center;padding:10px}
 footer a{margin-top:10px}
 footer .contacts{margin-bottom:10px}
 }
-@media (max-width:570px){
+@media (max-width:768px){
 body{background:#fff}
 .head-menu{margin:50px auto 0 auto}
 .head-menu .button{font-size:17px}
@@ -105,7 +105,7 @@ header .wrapper{padding-top:17px;height:235px}
 .benefits>div>div:first-child{padding-left:0}
 .benefits span{font-weight:700;text-transform:uppercase}
 }
-@media (min-width:571px){
+@media (min-width:769px){
 .head-menu>div:first-child{float:left}
 .head-menu>div:last-child{float:right}
 .benefits>div{margin:70px auto 0 auto}
