@@ -309,7 +309,7 @@
         }
 
     }
-    @media (max-width: 768px) {
+    @media (max-width: 570px) {
         body {
             background: #ffffff;
         }
@@ -355,7 +355,7 @@
         }
 
         }
-        @media (min-width: 769px) {
+        @media (min-width: 571px) {
         .head-menu > div:first-child {
             float: left;
         }
