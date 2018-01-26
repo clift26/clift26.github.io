@@ -38,7 +38,7 @@ form>input,textarea{outline:0;resize:none;background-color:transparent;border:2p
 .steps>div>div:last-child{color:#fff;font-weight:700;text-transform:uppercase}
 .container-3 h2{font-weight:700;color:#423e40;text-transform:uppercase;text-align:center}
 .l-cont{box-sizing:border-box}
-.l-cont p{vertical-align:middle;text-align:left;margin:30px 0;font-size:20px}
+.l-cont p{vertical-align:middle;text-align:left;margin:30px 0;font-size:25px}
 .r-cont>div{border:6px solid #28bab7;text-align:center}
 .r-cont>div>div:first-child{font-weight:700;color:#423e40;text-transform:uppercase}
 footer{background-color:#3f3f3e}
