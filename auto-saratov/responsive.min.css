@@ -56,30 +56,30 @@ footer .nav-bot .contacts{margin:0;text-align:left}
 .wrapper{width:100%}
 }
 @media (max-width:991px){
-.contacts{font-size:24px;margin-bottom:15px}
+.contacts{font-size:26px;margin-bottom:15px}
 .mail a{padding:13px 0}
 .mail a img{margin-right:15px}
 h1{font-size:30px}
 .benefits>div>div>div{font-size:28px}
-.button{padding:15px 50px}
+.button{padding:15px 50px;font-size:25px}
 .head-menu{margin:20px auto 0 auto}
 header .wrapper{padding-top:10px;height:180px}
 header{background:#3e3f3f}
 .container-1{background:#fff}
-.feedback h2{font-size:26px;margin:65px 0 12px 0}
-.feedback h4{font-size:23px;margin:57px 0 27px 0}
+.feedback h2{font-size:30px;margin:30px 0 12px 0}
+.feedback h4{font-size:26px;margin:30px 0 27px 0}
 form>input,textarea{width:370px;margin-left:10px}
 form textarea,form>input{padding:20px 0 20px 20px;width:350px;margin-bottom:20px}
 textarea{margin-bottom:20px}
 .file-upload{margin-bottom:30px}
 #preview>img{margin-right:10px;margin-bottom:5px}
 .file-upload label span{padding:15px 20px}
-.container-2{background:#3e3f3f}
+.container-2{background:#3e3f3f;height:435px}
 .container-2 h2{font-size:26px;margin:25px 0 25px 0}
 .steps>div{margin:25px 0 25px 0}
 .steps>div:first-child{margin:0}
-.steps>div>div:first-child{font-size:30px;width:40px;height:40px;border-radius:20px}
-.steps>div>div:last-child{font-size:18px;padding-left:33px}
+.steps>div>div:first-child{font-size:30px;width:60px;height:60px;border-radius:30px}
+.steps>div>div:last-child{font-size:22px;padding-left:33px}
 .container-3{background:#fff}
 .container-3 h2{font-size:26px;margin:50px 0 30px 0}
 .info{padding:0 10px}
@@ -96,10 +96,10 @@ footer .contacts{margin-bottom:10px}
 @media (max-width:768px){
 body{background:#fff}
 .head-menu{margin:50px auto 0 auto}
-.head-menu .button{font-size:17px}
-.mail a{padding:30px 0}
+.head-menu .button{font-size:25px}
+.mail a{padding:30px 0;font-size:25px}
 .head-menu>div{float:none;display:block;margin:0 auto;width:100%}
-h1{font-size:20px;margin-bottom:-35px}
+h1{font-size:28px;margin-bottom:-35px}
 header .wrapper{padding-top:17px;height:235px}
 .benefits{margin:30px 0}
 .benefits>div>div{padding-top:15px;margin-bottom:15px;border-top:1px solid #28bab7;text-align:center}
