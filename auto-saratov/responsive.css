@@ -309,7 +309,7 @@
         }
 
     }
-    @media (max-width: 570px) {
+    @media (max-width: 768px) {
         body {
             background: #ffffff;
         }
@@ -355,7 +355,7 @@
         }
 
         }
-        @media (min-width: 571px) {
+        @media (min-width: 769px) {
         .head-menu > div:first-child {
             float: left;
         }
@@ -372,19 +372,19 @@
         .benefits > div > div:first-child {
             padding-left: 0;
         }
-            .benefits > div {
-                display: table;
-                text-align: center;
-            }
-             .benefits {
+        .benefits > div {
+            display: table;
+            text-align: center;
+        }
+        .benefits {
             margin: 0 auto;
             padding: 0 0 20px;
         }
-            .benefits > div > div {
-                display: table-cell;
-            }
-            .benefits span {
-                font-weight: bold;
-                text-transform: uppercase;
-            }
+        .benefits > div > div {
+            display: table-cell;
+        }
+        .benefits span {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
     }
