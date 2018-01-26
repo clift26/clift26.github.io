@@ -79,7 +79,7 @@ textarea{margin-bottom:20px}
 .steps>div{margin:25px 0 25px 0}
 .steps>div:first-child{margin:0}
 .steps>div>div:first-child{font-size:30px;width:60px;height:60px;border-radius:30px}
-.steps>div>div:last-child{font-size:22px;padding-left:33px}
+.steps>div>div:last-child{font-size:20px;padding-left:25px}
 .container-3{background:#fff}
 .container-3 h2{font-size:26px;margin:50px 0 30px 0}
 .info{padding:0 10px}
