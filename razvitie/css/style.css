@@ -53,12 +53,13 @@ body{
 .text-justify {
     line-height: 2;
 }
-.container:nth-child(5) {
+.container:nth-child(6) {
     background: #00cc99;
 }
 .copy {
     text-align: right;
 }
+
 @media (max-width: 768px){
     .navbar-brand{
         margin: 0 auto;
