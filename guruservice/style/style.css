@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background: #0a69ad;
+}
+h1 {
+    color: #ffffff;
+    font-weight: bold;
+}
+header .container > p {
+    font-style: medium;
+}
+.web, .pencil, .target {
+    width: 81px;
+    height: 74px;
+    background: url(../images/sprite.png) no-repeat;
+    background-position-y: -74px;
+}
+.web:hover, .pencil:hover, .target:hover {
+    background-position-y: 0;
+}
+.pencil {
+    background-position-x:  -81px;
+}
+.target {
+    background-position-x: -162px;
+}

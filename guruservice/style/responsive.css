@@ -1,0 +1,16 @@
+@media screen and (min-width:1200px){
+    header {
+        height: 1200px;
+}
+    .container {
+    margin: 0 auto;
+    width: 1200px;
+    height: 100%;
+}
+    h1 {
+        font-size: 88px;
+    }
+    header .container > p {
+    font-size: 18px;
+}
+}
