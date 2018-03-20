@@ -27,6 +27,7 @@ header .container {
     height: 74px;
     background: url(../images/sprite.png) no-repeat;
     background-position-y: -74px;
+    margin-bottom: 30px;
 }
 .active .web, .active .pencil, .active .target {
     background-position-y: 0;
@@ -113,9 +114,11 @@ button {
     border: none;
     font-size: 16px;
     color: #c7c7c7;
-    padding: 12px 10px;
+    padding: 12px 0;
     outline: none;
     cursor: pointer;
+    width: 120px;
+    text-align: center;
     
 }
 button:hover {
@@ -125,7 +128,6 @@ button:hover {
     color: #ffffff;
     background: #005999;
     border-radius: 900px;
-    padding: 12px 50px;
     box-shadow: 0 4px 28px 2px rgba(19,120,191,0.5)
 }
 .pressed:hover {
@@ -137,4 +139,20 @@ h3 {
 }
 .portfolio div img {
     width: 100%;
+}
+.title {
+    margin: 17px 0 10px 0;
+    font-weight: bold;
+}
+.description {
+    color: #8c8c8c;
+}
+.portfolio {
+    margin-bottom: 170px;
+}
+.portfolio::after {
+    content: '';
+    display: table;
+    clear: both;
+    float: none;
 }
