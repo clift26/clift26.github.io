@@ -3,9 +3,9 @@
     height: 1200px;
 }
     .container {
-    margin: 0 auto;
-    width: 1200px;
-    height: 100%;
+        margin: 0 auto;
+        width: 1200px;
+        height: 100%;
 }
     h1 {
         font-size: 88px;
@@ -20,7 +20,7 @@
         line-height: 28px;
     }
     .list {
-        margin-top: 57px;
+        margin-top: 35px;
     }
     .services h2 {
         margin-bottom: 20px;
@@ -32,11 +32,78 @@
         margin-bottom: 80px;
     }
     .portfolio {
-      margin: 0px -15px 150px;
+        margin: 0px -15px 150px;
     }
     .portfolio > div {
-      float:left;
-      width: 380px;
-      margin: 0 15px 60px;  
+        float:left;
+        width: 380px;
+        margin: 0 15px 60px;  
+    }
+}
+@media screen and (max-width:1200px){
+    h1 {
+        font-size: 46px;
+        margin: 61px 0 50px 15px;
+    }
+    header .container > p {
+        max-width: 725px;
+        line-height: 28px;
+        margin: 0 15px 30px 15px;
+    }
+    .container {
+        margin: 0 auto;
+        height: 700px;
+    }
+    .info {
+        margin: 25px auto 25px;
+    }
+    .info-cont p {
+        margin: 70px auto;    
+    }
+    nav {
+        float: right;
+    }
+    .portfolio > div {
+        float: left;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:837px){
+     header {
+    height: 1680px;
+    }
+    .services > div {
+        display: block;
+    }
+    .portfolio > div {
+        float: none;
+        margin: 0 auto;
+    }
+    .info-cont p {
+        margin: 40px 10px 30px 10px;
+        text-align: center;
+    }
+    .info-cont {
+        margin-bottom; 70px;
+    }
+    .description {
+        margin-bottom: 15px;
+    }
+    .portfolio {
+        margin: 0;
+    }
+    nav {
+        text-align: center;
+        float: none;
+    }
+    h3 {
+        margin: 20px 0;
+        text-align: center;
+        position: relative;
+        left: 8px;
+    }
+    .title, .description {
+        margin-left: 10px;
     }
 }
