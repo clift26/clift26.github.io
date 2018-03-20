@@ -9,7 +9,34 @@
 }
     h1 {
         font-size: 88px;
-    }
-   
+        margin: 261px auto 50px;
+        line-height: 100px;
 }
+    .services {
+        margin-top: 240px;
+    }
+    header .container > p {
+        width: 590px;
+        line-height: 28px;
+    }
+    .list {
+        margin-top: 57px;
+    }
+    .services h2 {
+        margin-bottom: 20px;
+    }
+    nav {
+        float:right;
+    }
+    .p-nav {
+        margin-bottom: 80px;
+    }
+    .portfolio {
+      margin: 0px -15px;
+    }
+    .portfolio > div {
+      float:left;
+      width: 380px;
+      margin: 0 15px 60px;  
+    }
 }
