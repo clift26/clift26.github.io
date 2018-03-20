@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 header {
     background: #0a69ad;
@@ -12,6 +13,9 @@ h1 {
 }
 header .container > p {
     font-style: medium;
+}
+header .container {
+    color: #ffffff;
 }
 .web, .pencil, .target {
     width: 81px;
@@ -27,4 +31,18 @@ header .container > p {
 }
 .target {
     background-position-x: -162px;
+}
+.services div h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+.info {
+    font-size: 16px;
+}
+.services p a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.services p:last-child a {
+    color: #0a69ad;
 }
