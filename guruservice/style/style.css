@@ -21,6 +21,7 @@ header .container > p {
 }
 header .container {
     color: #ffffff;
+    padding-left: 15px;
 }
 .web, .pencil, .target {
     width: 81px;
