@@ -35,15 +35,20 @@
         margin: 0px -15px 150px;
     }
     .portfolio > div {
-        float:left;
-        width: 380px;
+        display: inline-block;
         margin: 0 15px 60px;  
+    }
+    .title, .description {
+        text-align: left;
     }
 }
 @media screen and (max-width:1200px){
     h1 {
         font-size: 46px;
         margin: 61px 0 50px 15px;
+    }
+    h3 {
+        padding-left: 57px;
     }
     header .container > p {
         max-width: 725px;
@@ -64,9 +69,12 @@
         float: right;
     }
     .portfolio > div {
-        float: left;
+        display: inline-block;
         margin-top: 40px;
         margin-left: 40px;
+    }
+    .title, .description {
+        text-align: left;
     }
 }
 @media screen and (max-width:837px){
@@ -77,8 +85,10 @@
         display: block;
     }
     .portfolio > div {
-        float: none;
         margin: 0 auto;
+    }
+    .portfolio > div:nth-child(odd) {
+        padding-right: 20px;
     }
     .info-cont p {
         margin: 40px 10px 30px 10px;
@@ -101,7 +111,8 @@
         margin: 20px 0;
         text-align: center;
         position: relative;
-        left: 8px;
+        left: -10px;
+        padding-left: 0;
     }
     .title, .description {
         margin-left: 10px;
