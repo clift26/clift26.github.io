@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 1663px;
+    height: 100%;
+}
+.container {
+    margin: 0 auto;
+    width: 984px;
+}
+.lang-bar {
+    background: #3c3c3c;
+    height: 30px;
+    float: right;
+    width: 100%;
+}
+.lang-bar::after {
+    content: '';
+}
+header {
+    height: 80px;
+}
+header > div {
+    display: inline-block;
+}
+header > button {
+    float: right;
+}
+.banner {
+    height: 400px;
+    background: #efefef;
+    width: 100%;
+}
+.banner .container {
+    padding-top: 20px;
+}
+.b-img {
+    float: left;
+    margin-right: 5px;
+    position: relative;
+    left: -70px;
+}
