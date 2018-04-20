@@ -6,21 +6,17 @@
 }
 .wrapper {
     margin: 0 auto;
-    width: 1663px;
+    max-width: 1663px;
     height: 100%;
 }
 .container {
     margin: 0 auto;
-    width: 984px;
+    max-width: 984px;
 }
 .lang-bar {
     background: #3c3c3c;
-    height: 30px;
-    float: right;
+    height: 31px;
     width: 100%;
-}
-.lang-bar::after {
-    content: '';
 }
 header {
     height: 80px;
@@ -44,4 +40,32 @@ header > button {
     margin-right: 5px;
     position: relative;
     left: -70px;
+}
+.benefits {
+    padding-top: 85px;
+}
+.benefits .container > div {
+    display: table;
+}
+.benefits .container > div > div {
+    display: table-cell;
+}
+.benefits h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.benefits h3 {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.benefits > div > div {
+    border-bottom: 1px  solid #ebebeb;
+    width: 100%;
+}
+.caption {
+    text-align: center;
+}
+.ads, .adbl {
+    padding-right: 50px;
 }
