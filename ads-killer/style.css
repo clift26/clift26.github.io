@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    box-sizing: border-box;
 }
 .wrapper {
     margin: 0 auto;
@@ -18,14 +19,38 @@
     height: 31px;
     width: 100%;
 }
+.brand {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+    position: relative;
+    top: -10px;
+    padding-left: 14px;
+}
 header {
     height: 80px;
+    padding-top: 20px;
 }
 header > div {
     display: inline-block;
 }
 header > button {
     float: right;
+    width: 166px;
+    height: 44px; 
+}
+header b {
+    position: relative;
+    top: -5px;
+    font-weight: 700;
+    font-size: 21px;
+}
+button {
+    background: #ffe719;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 21px;
+    border-radius: 8px 8px;
 }
 .banner {
     height: 400px;
@@ -35,11 +60,37 @@ header > button {
 .banner .container {
     padding-top: 20px;
 }
+h1 {
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 37px;
+    text-transform: uppercase;
+}
+.banner p {
+    font-size: 16px;
+}
+.banner button {
+    width: 260px;
+    height: 60px;
+}
+.banner button p {
+    font-size: 11px;
+    color: #8b7e0e;
+    text-align: left;
+    padding-left: 12px;
+}
+.banner .container  p:nth-child(2) {
+    margin-top: 25px;
+}
 .b-img {
     float: left;
     margin-right: 5px;
     position: relative;
     left: -70px;
+}
+.banner::after {
+    content: '';
+    clear: both;
 }
 .benefits {
     padding-top: 85px;
@@ -68,4 +119,39 @@ header > button {
 }
 .ads, .adbl {
     padding-right: 50px;
+}
+.browsers {
+    box-sizing: border-box;
+    width: 100%;
+}
+.browsers > div {
+    display: inline-block;
+    width: 160px;
+    height: 65px;
+    text-align: center;
+    background: #f4f4f4;
+    text-decoration: underline;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+.browsers > div > div {
+    display: inherit;
+    box-sizing: border-box;
+}
+.google, .mozilla, .me, .ie, .ya, .opera {
+    width: 29px;
+    height: 29px;
+    background: url(images/browsers.png) no-repeat;
+    float: left;
+    position: relative;
+    left: 18px;
+    top: 18px;
+}
+footer {
+    background: #3c3c3c;
+    height: 340px;
+}
+.copyright {
+    background: #303030;
+    height: 30px;
 }
