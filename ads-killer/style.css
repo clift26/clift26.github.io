@@ -1,200 +1,215 @@
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-.wrapper {
-    margin: 0 auto;
-    max-width: 1663px;
-    height: 100%;
-}
-.container {
-    margin: 0 auto;
-    max-width: 984px;
-}
-.lang-bar {
-    background: #3c3c3c;
-    height: 31px;
-    width: 100%;
-}
-.brand {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 24px;
-    position: relative;
-    top: -10px;
-    padding-left: 14px;
-}
-header {
-    height: 80px;
-    padding-top: 20px;
-}
-header > div {
-    display: inline-block;
-}
-header > button {
-    float: right;
-    width: 166px;
-    height: 44px; 
-}
-header b {
-    position: relative;
-    top: -5px;
-    font-weight: 700;
+/*общее*/
+    * {
+        margin: 0 auto;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        margin: 0 auto;
+        max-width: 1663px;
+        height: 100%;
+    }
+    .container {
+        margin: 0 auto;
+        max-width: 984px;
+    }
+button div:nth-child(2) {
     font-size: 21px;
 }
-button {
-    background: #ffe719;
-    padding: 10px 20px;
-    font-weight: 700;
-    font-size: 21px;
-    border-radius: 8px 8px;
-}
-button > div {
-    float: right;
-}
-button::after {
-    content: '';
-    clear: both;
-}
-button:focus {
-    outline: none;
-}
-button img {
-    width: 24px;
-    height: 27px;
-    text-align: left;
-}
-.banner {
-    min-height: 400px;
-    background: #efefef;
-    width: 100%;
-}
-.banner .container::after {
-    content: '';
-    clear: both;
-}
-.banner .container {
-    padding-top: 20px;
-}
-h1 {
-    font-size: 40px;
-    font-weight: 300;
-    padding-top: 37px;
-    text-transform: uppercase;
-}
-.banner p {
-    font-size: 16px;
-}
-.banner button {
-    width: 260px;
-    height: 60px;
-}
-.banner button p {
-    font-size: 11px;
-    color: #8b7e0e;
-    text-align: left;
-    padding-left: 12px;
-}
-.banner .container  p:nth-child(2) {
-    margin-top: 25px;
-}
-.b-img {
-    float: left;
-    margin-right: 5px;
-    position: relative;
-    left: -70px;
-}
-.banner::after {
-    content: '';
-    clear: both;
-}
-.benefits {
-    padding-top: 85px;
-}
-.benefits .container > div {
-    display: table;
-}
-.benefits .container > div > div {
-    display: table-cell;
-}
-.benefits h1 {
-    font-size: 30px;
-    font-weight: bold;
-}
-.benefits h3 {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.benefits > div > div {
-    border-bottom: 1px  solid #ebebeb;
-    width: 100%;
-}
-.caption {
-    text-align: center;
-}
-.ads, .adbl {
-    padding-right: 50px;
-}
-.browsers {
-    box-sizing: border-box;
-    width: 100%;
-}
-.browsers > div {
-    display: inline-block;
-    width: 160px;
-    height: 65px;
-    text-align: center;
-    background: #f4f4f4;
-    text-decoration: underline;
-    font-size: 13px;
-    box-sizing: border-box;
-}
-.browsers > div > div {
-    display: inherit;
-    box-sizing: border-box;
-}
-.google, .mozilla, .me, .ie, .ya, .opera {
-    width: 29px;
-    height: 29px;
-    background: url(images/browsers.png) no-repeat;
-    float: left;
-    position: relative;
-    left: 18px;
-    top: 18px;
-}
-.browsers > div:hover {
-    background: #ffffff;
-    border: 1px solid #d7d7d7;
-    border-bottom: none;
-}
-.browsers::after {
-    content: '';
-    clear: both;
-}
-.mozilla {
-    background-position: -30px 0;
-}
-.me {
-    background-position: -59px 0;
-}
-.ie {
-    background-position: -88px 0;
-}
-.ya {
-    background-position: -119px 0;
-}
-.opera {
-    background-position: -148px 0;
-}
-footer {
-    background: #3c3c3c;
-    height: 340px;
-}
-.copyright {
-    background: #303030;
-    height: 30px;
-}
+/*общее конец*/
+/*хедер*/
+    .lang-bar {
+        background: #3c3c3c;
+        height: 31px;
+        width: 100%;
+    }
+    .brand {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 24px;
+        position: relative;
+        top: -10px;
+        padding-left: 14px;
+    }
+    header {
+        min-height: 80px;
+        padding: 20px 0;
+    }
+    header > div {
+        display: inline-block;
+    }
+    header button {
+        float: right;
+        width: 166px;
+        height: 44px; 
+    }
+    header button div:first-child {
+        position: relative;
+        bottom: 3px;
+    }
+    header button  div:nth-child(2) {
+        position: relative;
+        top: -10px;
+        left: 6px;
+    }
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+/*хедер конец*/
+/*кнопка скачать*/
+    button {
+        background: #ffe719;
+        padding: 10px 20px;
+        font-weight: 700;
+        font-size: 21px;
+        border-radius: 8px 8px;
+    }
+    button > div {
+        display: inline-block;
+    }
+    button:focus {
+        outline: none;
+    }
+    button img {
+        width: 24px;
+        height: 27px;
+    }
+/*кнопка конец*/
+/*банер*/
+    .banner {
+        min-height: 400px;
+        background: #efefef;
+        width: 100%;
+    }
+    .banner .container::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+    .banner .container {
+        padding-top: 20px;
+    }
+    .banner .info p:nth-child(1) {
+        padding: 28px 0;
+    }
+    h1 {
+        font-size: 40px;
+        font-weight: 300;
+        padding-top: 37px;
+        text-transform: uppercase;
+    }
+    .banner p {
+        font-size: 16px;
+    }
+    .banner button {
+        width: 260px;
+        height: 60px;
+    }
+    .banner button p {
+        font-size: 11px;
+        color: #8b7e0e;
+    }
+    .b-img {
+        float: left;
+        margin-right: 5px;
+        position: relative;
+        left: -70px;
+    }
+    .banner::after {
+        content: '';
+        clear: both;
+    }
+/*банер конец*/
+/*выгоды*/
+    .benefits {
+        padding-top: 85px;
+    }
+    .benefits .container > div {
+        display: table;
+    }
+    .benefits .container > div > div {
+        display: table-cell;
+    }
+    .benefits h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .benefits h3 {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .benefits > div > div {
+        border-bottom: 1px  solid #ebebeb;
+        width: 100%;
+    }
+    .caption {
+        text-align: center;
+    }
+    .ads, .adbl {
+        padding-right: 50px;
+    }
+/*выгоды конец*/
+/*браузеры*/
+    .browsers {
+        box-sizing: border-box;
+        width: 100%;
+    }
+    .browsers > div {
+        display: inline-block;
+        width: 160px;
+        height: 65px;
+        text-align: center;
+        background: #f4f4f4;
+        text-decoration: underline;
+        font-size: 13px;
+        box-sizing: border-box;
+    }
+    .google, .mozilla, .me, .ie, .ya, .opera {
+        width: 29px;
+        height: 29px;
+        background: url(images/browsers.png) no-repeat;
+        float: left;
+        position: relative;
+        left: 18px;
+        top: 18px;
+    }
+    .browsers > div:hover {
+        background: #ffffff;
+        border: 1px solid #d7d7d7;
+        border-bottom: none;
+    }
+    .browsers::after {
+        content: '';
+        clear: both;
+    }
+    .mozilla {
+        background-position: -30px 0;
+    }
+    .me {
+        background-position: -59px 0;
+    }
+    .ie {
+        background-position: -88px 0;
+    }
+    .ya {
+        background-position: -119px 0;
+    }
+    .opera {
+        background-position: -148px 0;
+    }
+/*браузеры конец*/
+/*футер*/
+    footer {
+        background: #3c3c3c;
+        height: 340px;
+    }
+    .copyright {
+        background: #303030;
+        height: 30px;
+    }
+/*футер конец*/
