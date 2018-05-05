@@ -93,7 +93,10 @@ button div:nth-child(2) {
     .banner .container {
         padding-top: 20px;
     }
-    .banner .info p:nth-child(1) {
+    .info {
+        min-width: 800px;
+    }
+    .banner .info p:nth-child(2) {
         padding: 28px 0;
     }
     h1 {
