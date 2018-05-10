@@ -15,7 +15,7 @@
         margin: 0 auto;
         max-width: 984px;
     }
-button div:nth-child(2) {
+button > div:nth-child(2) {
     font-size: 21px;
 }
 /*общее конец*/
@@ -93,22 +93,12 @@ button div:nth-child(2) {
     .banner .container {
         padding-top: 20px;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-    .info {
-        min-width: 800px;
-    }
-=======
->>>>>>> bc4fdac00614f1656ec1407ef48d77b87471b302
     .banner .info p:nth-child(2) {
-=======
-    .banner .info p:nth-child(1) {
->>>>>>> parent of bc4fdac... banner
         padding: 28px 0;
     }
     h1 {
-        font-size: 40px;
-        font-weight: 300;
+        font-size: 39px;
+        
         padding-top: 37px;
         text-transform: uppercase;
     }
@@ -118,6 +108,20 @@ button div:nth-child(2) {
     .banner button {
         width: 260px;
         height: 60px;
+        margin: 23px 0 35px 0;
+        text-align: left;
+    }
+    .banner button div {
+        font-size: 20px;
+    }
+    .banner button > div:nth-child(1) {
+        position: relative;
+        left: -5px;
+        bottom: 7px;
+    }
+    .banner button > div:nth-child(2) {
+        position: relative;
+        bottom: 3px;
     }
     .banner button p {
         font-size: 11px;

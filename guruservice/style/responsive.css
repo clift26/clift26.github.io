@@ -81,6 +81,9 @@
      header {
     height: 1680px;
     }
+    header .container {
+        padding: 0;
+    }
     .services > div {
         display: block;
     }
