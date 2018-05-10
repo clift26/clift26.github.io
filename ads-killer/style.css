@@ -148,20 +148,39 @@ button > div:nth-child(2) {
     .benefits .container > div > div {
         display: table-cell;
     }
-    .benefits h1 {
+    .benefits h2 {
         font-size: 30px;
         font-weight: bold;
     }
     .benefits h3 {
-        font-size: 18px;
+        font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    .benefits h4 {
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
     }
     .benefits > div > div {
         border-bottom: 1px  solid #ebebeb;
         width: 100%;
     }
-    .caption {
+    .benefits > div > div:first-child {
+        border: none;
+    }
+    .benefits > div > div:nth-child(2) {
+        border: none;
+    }
+    .info-ben {
+        max-width: 500px;
+        padding-right: 121px;
+    }
+    .info-ben p {
+        margin: 20px 0 30px;
+        max-width: 500px;
+    }
+    .caption, .ads, .adbl {
         text-align: center;
     }
     .ads, .adbl {
