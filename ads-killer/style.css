@@ -1,4 +1,21 @@
 /*общее*/
+    @font-face {
+        font-family: 'Proxima Nova Extra Condensed Extra Bold';
+        src: url('./fonts/ProximaNovaExCn-Extrabld.eot');
+        src: local('☺'),
+        url('./fonts/ProximaNovaExCn-Extrabld.woff') format('woff'),
+        url('./fonts/ProximaNovaExCn-Extrabld.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'Solomon Sans Black';
+        src: url('./fonts/Solomon Sans.ttf');
+        src: local('☺'),
+        url('./fonts/Solomon Sans.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
     * {
         margin: 0 auto;
         padding: 0;
@@ -15,9 +32,9 @@
         margin: 0 auto;
         max-width: 984px;
     }
-button > div:nth-child(2) {
-    font-size: 21px;
-}
+    button > div:nth-child(2) {
+        font-size: 21px;
+    }
 /*общее конец*/
 /*хедер*/
     .lang-bar {
@@ -26,8 +43,9 @@ button > div:nth-child(2) {
         width: 100%;
     }
     .brand {
+        font-family: 'Proxima Nova Extra Condensed Extra Bold';
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: bold;
         font-size: 24px;
         position: relative;
         top: -10px;
@@ -98,10 +116,15 @@ button > div:nth-child(2) {
     }
     h1 {
         font-size: 39px;
-        
+        font-family: 'Solomon Sans Black';
+        font-weight: bold;
         padding-top: 37px;
         text-transform: uppercase;
     }
+.info p b {
+    font-size: 16px;
+    font-weight: bold;
+}
     .banner p {
         font-size: 16px;
     }
@@ -144,18 +167,24 @@ button > div:nth-child(2) {
     }
     .benefits .container > div {
         display: table;
+        width: 100%;
     }
     .benefits .container > div > div {
         display: table-cell;
+        vertical-align: top;
     }
     .benefits h2 {
         font-size: 30px;
         font-weight: bold;
     }
     .benefits h3 {
+        font-family: 'Proxima Nova Extra Condensed Extra Bold';
         font-size: 24px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    .caption:nth-child(2) {
+        padding-right: 30px;
     }
     .benefits h4 {
             font-size: 18px;
@@ -172,19 +201,35 @@ button > div:nth-child(2) {
     .benefits > div > div:nth-child(2) {
         border: none;
     }
+    .benefits .container > div:last-child {
+        border: none;
+    }
     .info-ben {
         max-width: 500px;
-        padding-right: 121px;
+        padding: 35px 121px 10px 0;
     }
     .info-ben p {
         margin: 20px 0 30px;
         max-width: 500px;
+        text-align: justify;
     }
     .caption, .ads, .adbl {
         text-align: center;
+        padding-top: 8px;
     }
-    .ads, .adbl {
-        padding-right: 50px;
+    #ads {
+        padding: 10px 38px 0 0;
+    }
+    #adbl {
+        padding: 10px 11px 0 0;
+    }
+    .adbl {
+        padding-right: 73px;
+        padding-top: 64px;
+    }
+    .ads {
+        padding-right: 139px;
+        padding-top: 64px;
     }
 /*выгоды конец*/
 /*браузеры*/
