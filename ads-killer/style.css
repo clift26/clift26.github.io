@@ -42,6 +42,72 @@
         height: 31px;
         width: 100%;
     }
+.dropbtn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c3c3c;
+    width: 140px;
+}
+
+.dropbtn
+{
+  background: url('images/lang.png') no-repeat left center;
+  padding-left: 25px;
+  width: 40px;
+}
+
+.dropbtn::after {
+    background: rgba(0, 0, 0, 0) url("images/dropbtn.png") no-repeat scroll center center;
+    content: "";
+    height: 16px;
+    position: absolute;
+    left: 82px;
+    top: 6px;
+    width: 16px;
+}
+
+.dropdown-content a:first-child
+{
+  background: url('images/lang.png') no-repeat left center;
+  
+}
+
+.dropdown-content a:last-child
+{
+  background: url('images/lang.png') no-repeat left center;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
     .brand {
         font-family: 'Proxima Nova Extra Condensed Extra Bold';
         text-transform: uppercase;
@@ -117,7 +183,6 @@
     h1 {
         font-size: 39px;
         font-family: 'Solomon Sans Black';
-        font-weight: bold;
         padding-top: 37px;
         text-transform: uppercase;
     }
@@ -175,12 +240,10 @@
     }
     .benefits h2 {
         font-size: 30px;
-        font-weight: bold;
     }
     .benefits h3 {
         font-family: 'Proxima Nova Extra Condensed Extra Bold';
         font-size: 24px;
-        font-weight: bold;
         text-transform: uppercase;
     }
     .caption:nth-child(2) {
@@ -188,7 +251,6 @@
     }
     .benefits h4 {
             font-size: 18px;
-            font-weight: bold;
             text-transform: uppercase;
     }
     .benefits > div > div {
@@ -206,7 +268,7 @@
     }
     .info-ben {
         max-width: 500px;
-        padding: 35px 121px 10px 0;
+        padding: 35px 121px 15px 0;
     }
     .info-ben p {
         margin: 20px 0 30px;
@@ -233,38 +295,42 @@
     }
 /*выгоды конец*/
 /*браузеры*/
-    .browsers {
-        box-sizing: border-box;
-        width: 100%;
+     .google, .mozilla, .me, .ie, .ya, .opera {
+            width: 29px;
+            height: 29px;
+            background: url(images/browsers.png) no-repeat;
+            margin: 15px 5px 0 10px;
     }
     .browsers > div {
         display: inline-block;
         width: 160px;
         height: 65px;
-        text-align: center;
         background: #f4f4f4;
-        text-decoration: underline;
-        font-size: 13px;
         box-sizing: border-box;
-    }
-    .google, .mozilla, .me, .ie, .ya, .opera {
-        width: 29px;
-        height: 29px;
-        background: url(images/browsers.png) no-repeat;
-        float: left;
-        position: relative;
-        left: 18px;
-        top: 18px;
+        border: 1px solid transparent;
     }
     .browsers > div:hover {
         background: #ffffff;
         border: 1px solid #d7d7d7;
         border-bottom: none;
+        transition-duration: 0.4s;
     }
-    .browsers::after {
-        content: '';
-        clear: both;
+    .browsers > div > div {
+        display: inline-block;
+        vertical-align: middle;
     }
+    .browsers > div > div:nth-child(even) {
+        border-bottom: 1px solid #000;
+        margin: 15px 0 0;
+    }
+    .browsers > div:hover > div {
+        border: none;
+        margin-bottom: 1px;
+    }
+    .browsers > div:last-child > div:last-child{
+        margin-left: 15px;
+    }
+.browsers
     .mozilla {
         background-position: -30px 0;
     }
@@ -281,13 +347,61 @@
         background-position: -148px 0;
     }
 /*браузеры конец*/
+/*список*/
+    .list {
+        margin-top: 60px;
+    }
+    .list h3 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .list p {
+        margin: 15px 0 20px 0;
+    }
+    .list li {
+        margin-left: 15px;
+    }
+    .list ul {
+        margin-bottom: 110px;
+    }
+/*список конец*/
 /*футер*/
     footer {
         background: #3c3c3c;
         height: 340px;
+        text-align: center;
+        color: #ffffff;
+    }
+    footer h3 {
+        font-family: 'Solomon Sans Black';
+        font-size: 40px;
+        color: #ffffff;
+        padding-top: 75px;
+    }
+    footer .container > p:nth-child(2) {
+        font-size: 24px;
+        margin: 15px 0 40px 0;
+    }
+    footer .container > p:last-child {
+        color: #b1b1b1;
+        margin: 12px 0 65px 0;
+    }
+    footer button div:first-child {
+        position: relative;
+        right: 10px;
+    }
+    footer button div:last-child p {
+        font-size: 21px;
+        position: relative;
+        bottom: 4px;
     }
     .copyright {
         background: #303030;
         height: 30px;
     }
+.copyright p {
+    position: relative;
+    top: 8px;
+    color: #ffffff;
+}
 /*футер конец*/
