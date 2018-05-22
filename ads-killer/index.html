@@ -12,7 +12,8 @@
         var x=new XMLHttpRequest();
         x.open("get","https://jsonplaceholder.typicode.com/posts/1",true);
         x.onload=function(){
-        document.title=x.responseText;
+        var obj = JSON.parse(x.responseText);
+        document.title = obj.title;
         };
         x.send(null);
         }
