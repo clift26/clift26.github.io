@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="responsive.css">
     <script>
         function doRequest() {
-        var x=XMLHttpRequest();
+        var x=new XMLHttpRequest();
         x.open("get","http://jsonplaceholder.typicode.com/posts/1",true);
         x.onload=function(){
         document.title=x.responseText;
