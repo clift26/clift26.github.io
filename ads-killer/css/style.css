@@ -1,18 +1,18 @@
 /*общее*/
     @font-face {
         font-family: 'Proxima Nova Extra Condensed Extra Bold';
-        src: url('./fonts/ProximaNovaExCn-Extrabld.eot');
+        src: url('../fonts/ProximaNovaExCn-Extrabld.eot');
         src: local('☺'),
-        url('./fonts/ProximaNovaExCn-Extrabld.woff') format('woff'),
-        url('./fonts/ProximaNovaExCn-Extrabld.ttf') format('truetype');
+        url('../fonts/ProximaNovaExCn-Extrabld.woff') format('woff'),
+        url('../fonts/ProximaNovaExCn-Extrabld.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
     }
     @font-face {
         font-family: 'Solomon Sans Black';
-        src: url('./fonts/Solomon Sans.ttf');
+        src: url('../fonts/Solomon Sans.ttf');
         src: local('☺'),
-        url('./fonts/Solomon Sans.ttf') format('truetype');
+        url('../fonts/Solomon Sans.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
     }
@@ -61,12 +61,12 @@
         width: 100px;
     }
     .dropbtn {
-      background: url('images/lang.png') no-repeat left center;
+      background: url('../images/lang.png') no-repeat left center;
       padding-left: 25px;
       width: 100%;
     }
     .dropbtn::after {
-        background: url("images/dropbtn.png") no-repeat center;
+        background: url("../images/dropbtn.png") no-repeat center;
         content: "";
         height: 16px;
         position: absolute;
@@ -75,10 +75,10 @@
         width: 16px;
     }
     .dropdown-content a:first-child {
-      background: url('images/lang.png') no-repeat left center;
+      background: url('../images/lang.png') no-repeat left center;
     }
     .dropdown-content a:last-child {
-      background: url('images/lang.png') no-repeat left center; 
+      background: url('../images/lang.png') no-repeat left center; 
     }
     .dropdown-content a {
         padding: 2px 0 2px 25px;
@@ -269,7 +269,7 @@
     }
     .caption, .ads, .adbl {
         text-align: center;
-        padding-top: 8px;
+        padding-top: 5px;
     }
     #ads {
         padding: 10px 38px 0 0;
@@ -290,7 +290,7 @@
      .google, .mozilla, .me, .ie, .ya, .opera {
             width: 29px;
             height: 29px;
-            background: url(images/browsers.png) no-repeat;
+            background: url(../images/browsers.png) no-repeat;
             margin: 15px 5px 0 10px;
     }
     .browsers > div {
