@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <script>
-        var x=doRequest();
-x.open("get","http://jsonplaceholder.typicode.com/posts/1",true);
-x.onload=function(){
-document.title=x.responseText;
-};
-
+        function doRequest() {
+        var x=XMLHttpRequest();
+        x.open("get","http://jsonplaceholder.typicode.com/posts/1",true);
+        x.onload=function(){
+        document.title=x.responseText;
+        };
+        x.send(null);
+        }
     </script>
 </head>
 <body>
