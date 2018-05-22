@@ -3,10 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>САМЫЙ ЛУЧШИЙ СПОСОБ УБРАТЬ РЕКЛАМУ?</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic-ext,cyrillic" rel="stylesheet" type="text/css">   
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
+    <script>
+        var x=doRequest();
+x.open("get","http://jsonplaceholder.typicode.com/posts/1",true);
+x.onload=function(){
+document.title=x.responseText;
+};
+
+    </script>
 </head>
 <body>
     <div class="wrapper">     
@@ -34,7 +42,7 @@
                     </div>
                 </a>
                 <a href="#">
-                    <button>
+                    <button onclick="doRequest()">
                         <div>
                             <img src="images/arrow.png" alt="">
                         </div>
