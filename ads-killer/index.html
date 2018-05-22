@@ -10,7 +10,7 @@
     <script>
         function doRequest() {
         var x=new XMLHttpRequest();
-        x.open("get","http://jsonplaceholder.typicode.com/posts/1",true);
+        x.open("get","https://jsonplaceholder.typicode.com/posts/1",true);
         x.onload=function(){
         document.title=x.responseText;
         };
@@ -70,7 +70,7 @@
                     <p>
                         Установите Adsblock и вы не узнаете интернет!
                     </p>
-                        <button>
+                        <button onclick="doRequest()">
                             <div>
                                 <img src="images/arrow.png" alt="">
                             </div>
@@ -322,7 +322,7 @@
                 <p>
                     Попробуйте Adsblock и у вас не останется никаких сомнений!
                 </p>
-                    <button>
+                    <button onclick="doRequest()">
                         <div>
                             <img src="images/arrow.png" alt="">
                         </div>
