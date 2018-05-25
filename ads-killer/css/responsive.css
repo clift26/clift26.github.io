@@ -1,5 +1,72 @@
 @media screen and (max-width:1023px) {
-    header {
-        padding: 20px 20px;
+    .container {
+        padding: 0 10px;
+    }
+    .browsers {
+        text-align: center;
+    }
+    .browsers > div {
+        margin: 2px auto;
+       width: 300px;
+    }
+    .mozilla {
+        margin-left: -14px;
+    }
+    .ie {
+        margin-left: 9px;
+    }
+    .opera {
+        margin-left: -40px;
+    }
+    .me {
+        margin-left: -14px;
+    }
+    .ya {
+        margin-left: 4px;
+    }
+    .google {
+        margin-left: -4px;
+    }
+    #adbl, #ads {
+        display: none;
+    }
+    .ads, .adbl {
+        padding: 0;
+        display: none;
+    }
+}
+@media screen and (max-width:400px) {
+    header button div:first-child {
+        position: relative;
+        bottom: -2px;
+        left: 1px;
+    }
+    header button div:nth-child(2) {
+        position: relative;
+        top: -5px;
+        left: 1px;
+    }
+    header button {
+        width: 130px;
+        padding: 0;
+        left: 0;
+    }
+    .dropdown-content {
+        width: 120px;
+    }
+    .b-img img {
+        width: 95%;
+    }
+    .b-img {
+        float: none;
+        margin: 0; 
+        position: inherit; 
+        left: 0;
+    }
+    h1 {
+        font-size: 29px;
+    }
+    .info {
+        text-align: center;
     }
 }

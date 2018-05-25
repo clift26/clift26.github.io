@@ -53,12 +53,13 @@
         display: inline-block;
         color: #ffffff;
         right: 18px;
+        z-index: 1;
     }
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: #3c3c3c;
-        width: 100px;
+        width: 105px;
     }
     .dropbtn {
       background: url('../images/lang.png') no-repeat left center;
@@ -269,7 +270,7 @@
     }
     .caption, .ads, .adbl {
         text-align: center;
-        padding-top: 5px;
+        padding-top: 10px;
     }
     #ads {
         padding: 10px 38px 0 0;
@@ -291,7 +292,7 @@
             width: 29px;
             height: 29px;
             background: url(../images/browsers.png) no-repeat;
-            margin: 15px 5px 0 10px;
+            margin: 15px 5px 0 7px;
     }
     .browsers > div {
         display: inline-block;
@@ -360,9 +361,10 @@
 /*футер*/
     footer {
         background: #3c3c3c;
-        height: 340px;
+        min-height: 340px;
         text-align: center;
         color: #ffffff;
+        padding-bottom: 65px;
     }
     footer h3 {
         font-family: 'Solomon Sans Black';
@@ -376,7 +378,7 @@
     }
     footer .container > p:last-child {
         color: #b1b1b1;
-        margin: 12px 0 65px 0;
+        margin-top: 12px;
     }
     footer button div:first-child {
         position: relative;
@@ -396,4 +398,7 @@
     top: 8px;
     color: #ffffff;
 }
+ .benefits .ads, .benefits .abdl {
+        display: none;
+    }
 /*футер конец*/
