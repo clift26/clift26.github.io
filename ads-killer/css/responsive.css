@@ -27,6 +27,7 @@
     .google {
         margin-left: -4px;
     }
+/*
     #adbl, #ads {
         display: none;
     }
@@ -34,8 +35,9 @@
         padding: 0;
         display: none;
     }
+*/
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:412px) {
     header button div:first-child {
         position: relative;
         bottom: -2px;
@@ -68,5 +70,37 @@
     }
     .info {
         text-align: center;
+    }
+    .info-ben {
+        padding: 35px 95px 15px 0;
+    }
+    .info-ben p {
+        display: none;
+    }
+    .caption {
+        padding-top: 4px;
+    }
+    .ads {
+        padding-right: 0;
+    }
+    .adbl {
+        padding-right: 0;
+    }
+    .benefits h2, .benefits h3 {
+        font-size: 18px;
+    }
+    #ads img, #adbl img {
+        width: 70px;
+    }
+    #ads {
+        padding: 0;
+        
+    }
+    #adbl {
+        padding: 0;
+        
+    }
+    .browsers > div {
+        width: 100%;
     }
 }
