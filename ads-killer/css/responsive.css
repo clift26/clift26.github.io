@@ -68,39 +68,63 @@
     h1 {
         font-size: 29px;
     }
-    .info {
+    .banner {
         text-align: center;
     }
-    .info-ben {
-        padding: 35px 95px 15px 0;
-    }
-    .info-ben p {
+    .benefits {
         display: none;
     }
-    .caption {
-        padding-top: 4px;
+    .benefits-m {
+        display: block;
     }
-    .ads {
-        padding-right: 0;
+    .benefits-m .container > div > div {
+        margin: 25px 0 10px 0;
     }
-    .adbl {
-        padding-right: 0;
+    .benefits-m .container {
+        text-align: right;
     }
-    .benefits h2, .benefits h3 {
-        font-size: 18px;
+    .collum {
+        display: inline-block;
+        text-align: center;
     }
-    #ads img, #adbl img {
-        width: 70px;
+    .collum div:first-child {
+        font-family: 'Proxima Nova Extra Condensed Extra Bold';
+        text-transform: uppercase;
+        font-size: 19px;
     }
-    #ads {
-        padding: 0;
-        
+    .collum:first-child {
+        max-width: 115px;
+        text-align: left;
+        font-weight: bold;
+        font-family: 'Proxima Nova Extra Condensed Extra Bold';
+        text-transform: uppercase;
+        float: left;
     }
-    #adbl {
-        padding: 0;
-        
+    .collum:first-child > div:first-child {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+    .collum > div{
+        height: 65px;
+    }
+    .collum:last-child {
+        margin-left: 40px;
+    }
+    .collum img {
+        padding-top: 10px;
+    }
+    .target-m {
+        width: 50px;
+    }
+    .benefits-m::after {
+        content: '';
+        display: table;
+        clear: both;
     }
     .browsers > div {
         width: 100%;
+    }
+    .list h3 {
+        text-align: center;
     }
 }

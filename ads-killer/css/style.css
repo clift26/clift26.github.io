@@ -223,6 +223,9 @@
     .benefits {
         padding-top: 85px;
     }
+     .benefits-m {
+            display: none;
+    }  
     .benefits .container > div {
         display: table;
         width: 100%;
