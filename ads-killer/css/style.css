@@ -2,7 +2,7 @@
     @font-face {
         font-family: 'Proxima Nova Extra Condensed Extra Bold';
         src: url('../fonts/ProximaNovaExCn-Extrabld.eot');
-        src: local('☺'),
+        src: url('../fonts/ProximaNovaExCn-Extrabld.eot?#iefix') format('eot'),
         url('../fonts/ProximaNovaExCn-Extrabld.woff') format('woff'),
         url('../fonts/ProximaNovaExCn-Extrabld.ttf') format('truetype');
         font-weight: normal;
@@ -96,7 +96,9 @@
     .dropdown-content a:hover {
         background-color: #f1f1f1
     }
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content,
+    .dropdown:focus .dropdown-content,
+    .dropdown:active .dropdown-content  {
         display: block;
     }
 /*смена языка конец*/
@@ -144,6 +146,7 @@
         font-weight: 700;
         font-size: 21px;
         border-radius: 8px 8px;
+        cursor: pointer;
     }
     button > div {
         display: inline-block;
@@ -310,6 +313,7 @@
         border: 1px solid #d7d7d7;
         border-bottom: none;
         transition-duration: 0.4s;
+        cursor: pointer;
     }
     .browsers > div > div {
         display: inline-block;
