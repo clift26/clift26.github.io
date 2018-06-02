@@ -165,10 +165,10 @@
         padding-top: 37px;
         text-transform: uppercase;
     }
-.info p b {
-    font-size: 16px;
-    font-weight: bold;
-}
+    .info p b {
+        font-size: 16px;
+        font-weight: bold;
+    }
     .banner p {
         font-size: 16px;
     }
@@ -313,7 +313,6 @@
     .browsers > div:last-child > div:last-child{
         margin-left: 15px;
     }
-.browsers
     .mozilla {
         background-position: -30px 0;
     }
@@ -383,12 +382,12 @@
         background: #303030;
         height: 30px;
     }
-.copyright p {
-    position: relative;
-    top: 8px;
-    color: #ffffff;
-}
- .benefits .ads, .benefits .abdl {
+    .copyright p {
+        position: relative;
+        top: 8px;
+        color: #ffffff;
+    }
+    .benefits .ads, .benefits .abdl {
         display: none;
     }
 /*футер конец*/
