@@ -1,21 +1,4 @@
 /*общее*/
-    @font-face {
-        font-family: 'Proxima Nova Extra Condensed Extra Bold';
-        src: url('../fonts/ProximaNovaExCn-Extrabld.eot');
-        src: url('../fonts/ProximaNovaExCn-Extrabld.eot?#iefix') format('eot'),
-        url('../fonts/ProximaNovaExCn-Extrabld.woff') format('woff'),
-        url('../fonts/ProximaNovaExCn-Extrabld.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
-    @font-face {
-        font-family: 'Solomon Sans Black';
-        src: url('../fonts/Solomon Sans.ttf');
-        src: local('☺'),
-        url('../fonts/Solomon Sans.ttf') format('truetype');
-        font-weight: normal;
-        font-style: normal;
-    }
     * {
         margin: 0 auto;
         padding: 0;
@@ -103,7 +86,7 @@
     }
 /*смена языка конец*/
     .brand {
-        font-family: 'Proxima Nova Extra Condensed Extra Bold';
+        font-family: 'Proxima Nova Extra Condensed Extra Bold', sans-serif;
         text-transform: uppercase;
         font-size: 24px;
         position: relative;
@@ -241,7 +224,7 @@
         font-size: 30px;
     }
     .benefits h3 {
-        font-family: 'Proxima Nova Extra Condensed Extra Bold';
+        font-family: 'Proxima Nova Extra Condensed Extra Bold', sans-serif;
         font-size: 24px;
         text-transform: uppercase;
     }
