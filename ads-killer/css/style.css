@@ -18,6 +18,9 @@
     button > div:nth-child(2) {
         font-size: 21px;
     }
+p, li {
+    line-height: 21px;
+}
 /*общее конец*/
 /*хедер*/
 /*смена языка*/
