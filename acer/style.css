@@ -1,4 +1,36 @@
+body {
+    font-size: 14px;
+    font-family: sans-serif;
+}
 .wrapper {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+/*header*/
+.dropdown span {
+    font-weight: bold;
+}
+.header {
+    height: 110px;
+}
+button {
+    background: #ffffff;
+    color: #898989;
+}
+.dropdown-menu {
+    min-width: 18rem;
+}
+.dropdown-menu a {
+    color: #898989;
+}
+.phone {
+    font-size: 2.43em;
+    color: #898989;
+}
+/*header-banner*/
+.header-banner {
+    background: url('img/header-bg.png');
+    height: 540px;
     max-width: 1600px;
     margin: 0 auto;
 }
