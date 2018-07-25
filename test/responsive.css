@@ -1,0 +1,28 @@
+@media screen and (max-width:1279px) {
+    .logo {
+        text-align: center;
+    }
+    .header-nav {
+        background: #5a9aa8;
+        border-radius: 5%;
+        transition-duration: 0.8s;
+    }
+    .m-line > div {
+        float: none;
+    }
+   .m-line:first-child > div {
+    margin: 40px 10px;
+    }
+    .m-line:nth-child(2) > div {
+        margin: 30px 10px;
+    }
+    .m-line:nth-child(3) > div {
+        margin: 30px 10px;
+    }
+    .m-line > div {
+        background: #ffffff;
+        border-radius: 3%;
+        transition-duration: 0.8s;
+        padding: 10px;
+    }
+}
