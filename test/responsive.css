@@ -2,12 +2,18 @@
     .logo {
         text-align: center;
     }
+    header {
+        height: 100%;
+        padding-bottom: 30px;
+    }
     .header-nav {
         background: #5a9aa8;
-        border-radius: 5%;
+        border-radius: 30px;
         transition-duration: 0.8s;
+        text-align: center;
+        height: 100%;
     }
-    .m-line > div {
+    .m-line > div:nth-child(even) {
         float: none;
     }
    .m-line:first-child > div {
@@ -21,8 +27,34 @@
     }
     .m-line > div {
         background: #ffffff;
-        border-radius: 3%;
+        border-radius: 30px;
         transition-duration: 0.8s;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:799px) {
+    header {
+        height: 100%;
+        padding-bottom: 30px;
+    }
+    .logo img {
+        max-width: 100%;
+    }
+    .header-nav {
+        padding: 10px;
+        height: 100%;
+    }
+    .m-line:first-child > div {
+    margin: 20px;
+    }
+    .m-line:nth-child(2) > div {
+        margin: 20px;
+    }
+    .m-line:nth-child(3) > div {
+        margin: 20px;
+    }
+    .m-line > div {
+        display: block;
         padding: 10px;
     }
 }
