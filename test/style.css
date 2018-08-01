@@ -16,6 +16,7 @@ header {
     background: url('img/header-bg.png');
     width: 100%;
     height: 753px;
+    margin-bottom: 30px;
 }
 .logo {
     padding: 62px 0 110px;
@@ -46,3 +47,26 @@ header {
 .m-line:nth-child(3) > div {
     margin: 42px 30px 0 30px;
 }
+.sidebar {
+    background: url('img/aside-bg.png') center no-repeat;
+    height: 1060px;
+    float: right;
+    width: 270px;
+}
+.second-wrap::after {
+    display: table;
+    content: '';
+    clear: both;
+    float: none;
+}
+footer {
+    background: #f5f5f5;
+    margin-top: 30px;
+    height: 300px;
+}
+.copy {
+    text-align: center;
+    padding-top: 156px;
+    font-size: 13px;
+}
+
