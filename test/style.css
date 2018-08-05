@@ -47,10 +47,43 @@ header {
 .m-line:nth-child(3) > div {
     margin: 42px 30px 0 30px;
 }
+.container {
+    background: url('img/container.png');
+    max-width: 730px;
+    height: 190px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 88px;
+    transition-duration: 0.8s;
+}
+.container > div {
+    display: inline-block;
+    font-size: 18px;
+}
+.photo {
+    margin: 0 12px 0 36px;
+}
+.info {
+    max-width: 410px;
+    margin-top: 25px;
+}
+.social {
+    background: url('img/purple-container.png');
+    height: 100%;
+    position: relative;
+    bottom: 48px;
+    width: 137px;
+    text-align: center;
+    color: #fff;
+}
+.social > div:nth-child(even) {
+    border: 1px solid #fff;
+    border-radius: 30px;
+}
 .sidebar {
     background: url('img/aside-bg.png') center no-repeat;
     height: 1060px;
-    float: right;
+    display: inline-block;
     width: 270px;
 }
 .second-wrap::after {
