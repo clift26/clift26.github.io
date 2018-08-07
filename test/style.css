@@ -48,13 +48,20 @@ header {
     margin: 42px 30px 0 30px;
 }
 .container {
-    background: url('img/container.png');
     max-width: 730px;
-    height: 190px;
     display: inline-block;
     vertical-align: top;
     margin-right: 88px;
     transition-duration: 0.8s;
+}
+.media {
+    background: url('img/container.png');
+    height: 190px;
+    width: 100%;
+    display: inline-block;
+}
+.media > div {
+    display: inherit;
 }
 .container > div {
     display: inline-block;
@@ -81,7 +88,7 @@ header {
     text-align: center;
     color: #fff;
     position: relative;
-    left: 3px;
+    left: 5px;
 }
 .social > div:nth-child(even) {
     border: 2px solid #fff;
@@ -110,23 +117,55 @@ header {
     max-width: 350px;
     font-size: 14px;
     margin-top: 45px;
+    vertical-align: top;
+    cursor: pointer;
 }
 .info-block h3 {
     font-size: 24px;
     text-align: center;
     margin: 30px 0 20px 0;
 }
-.info-block p {
+.info-block > p {
     font-size: 14px;
 }
 .info-block:nth-child(odd) {
     margin-right: 25px;
+}
+.info-block:last-child {
+    height: 350px;
+    width: 350px;
+    cursor: auto;
+}
+.info-block a {
+    text-decoration: none;
+    position: relative;
+    top: 130px;
+}
+.order {
+    background: url('img/order-bg.png') center no-repeat;
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 30px;
+    transition-duration: 0.8s;
+}
+.info-block a:hover .order {
+    color: #fff;
+    transition-duration: 0.8s;
+}
+.info-block:hover img {
+    content: url('img/teal-container.png');
 }
 .sidebar {
     background: url('img/aside-bg.png') center no-repeat;
     height: 1056px;
     display: inline-block;
     width: 270px;
+    text-align: center;
+    padding: 20px;
 }
 .second-wrap::after {
     display: table;
