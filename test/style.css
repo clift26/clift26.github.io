@@ -20,6 +20,7 @@ header {
 }
 .logo {
     padding: 62px 0 110px;
+    transition-duration: 0.8s;
 }
 .header-nav {
     background: url('img/header-bg-photo.png') center no-repeat;
@@ -29,6 +30,10 @@ header {
 .m-line > div {
     display: inline-block;
     transition-duration: 0.8s;
+    cursor: pointer;
+}
+.m-line > div:hover {
+    color: #fff;
 }
 .m-line > div:nth-child(even) {
     float: right;

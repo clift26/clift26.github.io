@@ -33,6 +33,12 @@
         border-radius: 30px;
         transition-duration: 0.8s;
         padding: 10px;
+        background: #fff;
+        color: #000;
+    }
+    .m-line > div:hover {
+        background: #89c39b;
+        color: #fff;
     }
     .container {
         margin-right: 0;
@@ -46,6 +52,10 @@
     .container {
         max-width: 100%;
         display: block;
+    }
+    .logo {
+        padding: 62px 0 50px;
+        transition-duration: 0.8s;
     }
     .social {
         float: right;
@@ -84,6 +94,7 @@
     .header-nav {
         padding: 10px;
         height: 100%;
+        transition-duration: 0.8s;
     }
     .m-line:first-child > div {
     margin: 20px;
@@ -125,6 +136,12 @@
     }
     .info-block:nth-child(odd) {
         margin-right: 15px;
+    }
+    .info-block a {
+        top: 80px;
+    }
+    .info-block:last-child {
+        height: 200px;
     }
 }
 @media screen and (max-width:420px) {
