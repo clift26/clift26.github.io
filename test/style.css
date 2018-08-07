@@ -161,7 +161,7 @@ header {
     color: #fff;
     transition-duration: 0.8s;
 }
-.info-block:hover img {
+.info-block:hover img, .info-block:active img, .info-block:focus img {
     content: url('img/teal-container.png');
 }
 .sidebar {
