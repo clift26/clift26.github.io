@@ -103,12 +103,13 @@ header {
     margin: 5px 0;
 }
 .center {
-    margin-top: 45px;
+    text-align: center;
 }
 .info-block {
     display: inline-block;
     max-width: 350px;
     font-size: 14px;
+    margin-top: 45px;
 }
 .info-block h3 {
     font-size: 24px;
@@ -118,7 +119,7 @@ header {
 .info-block p {
     font-size: 14px;
 }
-.info-block:first-child {
+.info-block:nth-child(odd) {
     margin-right: 25px;
 }
 .sidebar {
