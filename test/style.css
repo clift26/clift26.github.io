@@ -166,11 +166,12 @@ header {
 }
 .sidebar {
     background: url('img/aside-bg.png') center no-repeat;
-    height: 1056px;
+    min-height: 1056px;
     display: inline-block;
     width: 270px;
     text-align: center;
     padding: 20px;
+    height: 100%;
 }
 .second-wrap::after {
     display: table;
