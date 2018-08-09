@@ -20,6 +20,7 @@ header {
 }
 .logo {
     padding: 62px 0 110px;
+    transition-duration: 0.8s;
 }
 .header-nav {
     background: url('img/header-bg-photo.png') center no-repeat;
@@ -29,6 +30,10 @@ header {
 .m-line > div {
     display: inline-block;
     transition-duration: 0.8s;
+    cursor: pointer;
+}
+.m-line > div:hover {
+    color: #fff;
 }
 .m-line > div:nth-child(even) {
     float: right;
@@ -54,12 +59,16 @@ header {
     margin-right: 88px;
     transition-duration: 0.8s;
 }
-.green {
-    background: url('img/container.png') no-repeat;
-    display: inline-block;
+.media {
+    background: url('img/container.png');
     height: 190px;
+    width: 100%;
+    display: inline-block;
 }
-.green > div {
+.media > div {
+    display: inherit;
+}
+.container > div {
     display: inline-block;
     font-size: 18px;
 }
@@ -84,7 +93,7 @@ header {
     text-align: center;
     color: #fff;
     position: relative;
-    left: 3px;
+    left: 5px;
 }
 .social > div:nth-child(even) {
     border: 2px solid #fff;
@@ -106,29 +115,63 @@ header {
     margin: 5px 0;
 }
 .center {
-    margin-top: 45px;
+    text-align: center;
 }
 .info-block {
     display: inline-block;
     max-width: 350px;
     font-size: 14px;
+    margin-top: 45px;
+    vertical-align: top;
+    cursor: pointer;
 }
 .info-block h3 {
     font-size: 24px;
     text-align: center;
     margin: 30px 0 20px 0;
 }
-.info-block p {
+.info-block > p {
     font-size: 14px;
 }
-.info-block:first-child {
-    margin-right: 23px;
+.info-block:nth-child(odd) {
+    margin-right: 25px;
+}
+.info-block:last-child {
+    height: 350px;
+    width: 350px;
+    cursor: auto;
+}
+.info-block a {
+    text-decoration: none;
+    position: relative;
+    top: 130px;
+}
+.order {
+    background: url('img/order-bg.png') center no-repeat;
+    width: 250px;
+    height: 70px;
+    cursor: pointer;
+    color: #000;
+    text-transform: uppercase;
+    padding-top: 20px;
+    font-size: 30px;
+    transition-duration: 0.8s;
+}
+.info-block a:hover .order {
+    color: #fff;
+    transition-duration: 0.8s;
+}
+.info-block:hover img, .info-block:active img, .info-block:focus img {
+    content: url('img/teal-container.png');
 }
 .sidebar {
     background: url('img/aside-bg.png') center no-repeat;
-    height: 1056px;
+    min-height: 1056px;
     display: inline-block;
     width: 270px;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
 }
 .second-wrap::after {
     display: table;
@@ -137,7 +180,7 @@ header {
     float: none;
 }
 footer {
-    background: #f5f5f5;
+    background: url('img/footer-bg.png');
     margin-top: 30px;
     height: 300px;
 }
