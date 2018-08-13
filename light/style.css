@@ -48,7 +48,7 @@ header {
     animation-iteration-count: infinite;
     cursor: pointer;
     
-    z-index: 0;
+    z-index: 100;
 
     display: flex;
 
