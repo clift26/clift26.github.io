@@ -9,6 +9,11 @@
     }
 }
 @media screen and (max-width: 420px) {
+    .menu {
+        display: block;
+        padding: 0;
+        margin: 20px 0;
+    }
     .skype {
         left: 44%;
     }
