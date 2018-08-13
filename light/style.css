@@ -1,0 +1,113 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.main-wrap {
+    max-width: 1600px;
+}
+.second-wrap {
+    max-width: 1115px;
+    padding: 0 20px;
+}
+/*хедер*/
+header {
+    background: #185CFF;
+    min-height: 100px;
+    height: 100%;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.logo {
+    position: relative;
+    top: 5px;
+    margin-right: 20px;
+}
+.menu {
+    display: inline-block;
+    padding-right: 20px;
+    font-size: 40px;
+    color: #fff;
+    transition-duration: .8s;
+    cursor: pointer;
+}
+.menu:hover {
+    color: #FFC818;
+    transition-duration: .8s;
+}
+/*конец хедера*/
+/*блок*/
+.container {
+    padding-top: 40px;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 40px 0 80px;
+}
+.skype  {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    cursor: pointer;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+@keyframes spin {
+from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+.container > div {
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    cursor: pointer;
+    text-align: justify;
+    margin: 40px;
+    transition-duration: .8s;
+}
+.container > div > p {
+    padding: 10px;
+}
+.container > div:hover {
+    background: rgba(181, 178, 171, 0.5);
+    transition-duration: .8s;
+}
+/*блок конец*/
+/*инфо блок*/
+h2 {
+    text-align: center;
+    font-size: 28px;
+}
+.info-block > p {
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 2px solid #808080;
+    padding-bottom: 15px;
+    text-align: justify;
+}
+/*конец инфо блок*/
+/*футер*/
+footer {
+    background: #D0D8E2;
+    min-height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+}
+/*конец футер*/

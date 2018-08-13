@@ -1,0 +1,15 @@
+@media screen and (max-width: 797px) {
+    .logo {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    .skype {
+        left: 48%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .skype {
+        left: 44%;
+    }
+}
