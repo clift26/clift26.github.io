@@ -57,6 +57,8 @@ header {
     
     background:#f7f5f8;
     background-image: url('img/skype.png');
+    background-position: center; 
+    background-repeat: no-repeat;
     border: 5px solid #185CFF;
     border-radius: 100%;
 }
