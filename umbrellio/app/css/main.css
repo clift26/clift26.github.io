@@ -25,12 +25,12 @@ body {
     .heading a h3 {
       color: #ff0e00;
       font-size: 24px; }
-  .heading a::before {
+  .heading h3::before {
     content: '';
-    bottom: 22px;
-    right: 0;
+    bottom: 20px;
+    left: 0;
     position: absolute;
-    width: 100%;
+    width: 100px;
     height: 2px;
     background-color: #ff0e00;
     -webkit-transition-duration: 0.2s;
@@ -39,7 +39,7 @@ body {
     -webkit-transform: scaleX(0);
         -ms-transform: scaleX(0);
             transform: scaleX(0); }
-  .heading a:hover:before {
+  .heading h3:hover:before {
     -webkit-transform: scaleX(1);
         -ms-transform: scaleX(1);
             transform: scaleX(1); }
@@ -57,8 +57,3 @@ header {
     margin: 0; }
   header .inner .logo {
     margin-right: 70px; }
-
-.news .heading {
-  border-bottom: 1px solid #000;
-  display: block;
-  width: 100%; }

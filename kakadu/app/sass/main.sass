@@ -1,0 +1,139 @@
+$header-bg: #dcdcdc;
+$nav-bg: #777777;
+$news-bg: #767676;
+$button-bg: #b7bce2;
+
+body
+  font-size: 14px
+  margin: 0
+  font-family: 'PT Sans', sans-serif
+.container
+    display: flex
+    width: 980px
+    margin: 0 auto
+header
+  background: $header-bg
+  .container
+    height: 230px
+    align-items: center
+    justify-content: space-between
+    .phone
+      font-size: 40px
+      color: #6f6f6f
+      span
+        cursor: pointer
+nav
+  background: $nav-bg
+  font-size: 30px
+  a
+    text-decoration: none
+    color: #fff
+    padding: 0 15px
+    &::after
+      content: ''
+      display: block
+      width: 100%
+      height: 2px
+      transform: scaleX(0)
+      background: #fff
+      transition: all 0.3s
+    &:hover::after
+      transform: scaleX(1)
+      display: block
+    &:nth-child(even)
+      border-left: 2px solid #fff
+      border-right: 2px solid #fff
+  .container
+    height: 80px
+    padding: 0 35px
+    align-items: center
+.form
+  background: #f9f9f9
+  .container
+    height: 382px
+    align-items: center
+    justify-content: space-between
+  .feedback
+    background: #d4e2d0
+    height: 307px
+    padding: 25px 20px
+    text-align: center
+    color: #767676
+    font-size: 24px
+    box-sizing: border-box
+    border-radius: 70px 10px
+    input
+      width: 218px
+      height: 52px
+      font-size: 24px
+      padding-left: 25px
+      margin-bottom: 32px
+      border-radius: 20px 20px
+      &:focus
+        outline: none
+      &:active
+        outline: none
+    .button
+      margin-top: 8px
+      background: $button-bg
+      color: #fff
+      cursor: pointer
+      width: 247px
+      height: 45px
+      padding-top: 15px
+      border-radius: 20px 20px
+      &:hover
+        background: #7f88c8
+.main
+  margin-top: 50px
+  h1
+    font-size: 40px
+    text-transform: capitalize
+  .container
+    justify-content: space-between
+  a
+    color: #fff
+    text-decoration: none
+    &:hover
+      p,h3
+        color: #f9e3d0
+        transition: all 0.3s
+    &:last-child
+      float: right
+      & p:after
+        content: ''
+        display: block
+        width: 100%
+        height: 2px
+        transform: scaleX(0)
+        background: #fff
+        transition: all 0.3s
+      &:hover p::after
+        transform: scaleX(1)
+        display: block
+  aside
+    background: $news-bg
+    width: 350px
+    padding: 0 30px
+    min-height: 560px
+    box-sizing: border-box
+    h2
+      color: #fff
+      font-size: 40px
+      text-transform: capitalize
+    h3
+      font-style: italic
+      font-size: 14px
+    p
+      margin-bottom: 30px
+      line-height: 25px
+  .about
+    width: 570px
+    color: #767676
+    p
+      line-height: 25px
+footer
+  width: 100%
+  height: 415px
+    
+    
