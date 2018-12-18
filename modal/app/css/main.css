@@ -7,8 +7,8 @@ body {
   text-align: center;
   margin: 0 auto; }
 
-.modal {
-  background: rgba(0, 0, 0, 0.2);
+.modal-bg {
+  background: rgba(0, 0, 0, 0.7);
   display: none;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
@@ -18,49 +18,37 @@ body {
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  -webkit-perspective: 500px;
-          perspective: 500px; }
+  right: 0; }
 
-.modal-wrap {
+.modal {
   width: 50%;
   max-width: 500px;
   top: 15%;
   background: #fff;
   position: absolute;
-  -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.4);
-          box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.4);
-  padding: 5px 15px;
+  padding: 20px;
   -webkit-border-radius: 22px;
           border-radius: 22px;
   -webkit-animation-name: drop;
           animation-name: drop;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s; }
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s; }
 
 @-webkit-keyframes drop {
   from {
     opacity: 0;
-    top: 5%;
-    -webkit-transform: rotateX(15deg);
-            transform: rotateX(15deg); }
+    top: 0%; }
   to {
     opacity: 1;
-    top: 15%;
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg); } }
+    top: 15%; } }
 
 @keyframes drop {
   from {
     opacity: 0;
-    top: 5%;
-    -webkit-transform: rotateX(15deg);
-            transform: rotateX(15deg); }
+    top: 0%; }
   to {
     opacity: 1;
-    top: 15%;
-    -webkit-transform: rotateX(0deg);
-            transform: rotateX(0deg); } }
+    top: 15%; } }
 
 .modal-header {
   display: -webkit-box;
@@ -77,8 +65,10 @@ body {
   line-height: 1.5;
   text-align: justify; }
 
-.closeBtn {
-  cursor: pointer;
+.modalCloseBtn {
+  cursor: pointer; }
+
+.cross {
   font-size: 50px;
   color: #000; }
 
