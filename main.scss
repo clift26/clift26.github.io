@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    padding: 15px;
+    text-align: center;
+    margin: 0 auto;
+}
+.modal-bg {
+    background: rgba(0,0,0,.7);
+    display: none;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+}
+.modal {
+    width: 50%;
+    max-width: 500px;
+    background: #fff;
+    position: absolute;
+    padding: 20px;
+    border-radius: 22px;
+    animation-name: drop;
+    animation-duration: 0.6s;
+}
+@keyframes drop {
+    from {
+        opacity: 0;
+        top: 0%;
+    }
+    to {
+        opacity: 1;
+        top: 33%;
+    }
+}
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+}
+.modal-body {
+    margin: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.modalCloseBtn {
+    cursor: pointer;
+}
+.cross {
+    font-size: 50px;
+    color: #000;
+}
+button {
+    border: none;
+    padding: 15px 50px;
+    background: #ff7726;
+    color: #fff;
+    border-radius: 22px;
+    margin: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
